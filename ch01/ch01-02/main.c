@@ -67,11 +67,11 @@ int main(int argc, char const *argv[])
     // }
 
     /* 使用#define指令行,打印 */
-    // int fahr;
-    // for( fahr = LOWER; fahr <= UPPER ; fahr = fahr + STE)
-    // {
-    //      printf("%3d \t %6.1f \n", fahr, 5.0 * (fahr - 32) / 9.0);
-    // }
+    int fahr;
+    for( fahr = LOWER; fahr <= UPPER ; fahr = fahr + STE)
+    {
+         printf("%3d \t %6.1f \n", fahr, 5.0 * (fahr - 32) / 9.0);
+    }
 
     // return 0;
 }

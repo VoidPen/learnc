@@ -14,6 +14,6 @@
         "environment": [],
         "externalConsole": true,
         "MIMode": "lldb",
-        "preLaunchTask": "c_debug"
+        "preLaunchTask": "Build Debug"
     }]
 }
