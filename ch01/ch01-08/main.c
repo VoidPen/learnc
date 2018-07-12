@@ -5,7 +5,8 @@
 #define OUT (0)
 
 int main(int argc, char const *argv[])
-{
+{   
+    // 初始化
     int status, i, j, c, len;
     int numbers[10];
 
@@ -14,6 +15,7 @@ int main(int argc, char const *argv[])
         numbers[i] = 0;
     }
 
+    // 统计单词长度
     status = OUT;
     while((c = getchar()) != EOF){
         if (c == ' ' || c == '\n' || c == '\t')
@@ -38,6 +40,7 @@ int main(int argc, char const *argv[])
         }
     }
     
+    // 查找单词长度最大值
     int max_value = 0;
     for (i = 0; i < 10; ++i)
     {
@@ -47,6 +50,7 @@ int main(int argc, char const *argv[])
         }
     }
 
+    // 打印单词长度
 #define MAX_COL 50
     for (i = 0; i < 10; ++i)
     {
@@ -59,4 +63,22 @@ int main(int argc, char const *argv[])
     }
 
     return 0;
+}
+
+void test()
+{
+#define MAXCHAR 128 
+
+    int c;
+    int cnumbers[MAXCHAR];
+
+    while((c = getchar()) != EOF)
+    {
+        if (c < MAXCHAR)
+        {
+            ++cnumbers[c];
+        }
+    }
+    int i = '0';
+    printf("%d", cnumbers[i]);
 }
