@@ -18,12 +18,12 @@ int main(int argc, char const *argv[])
             {                 //输出换行指令，更改当前状态为OUT（输入为非单词状态）
                 putchar('\n');
                 status = OUT;
-            } 
+            }
         }
         else
         {   //当前输入为单词，打印单词。
-                status = IN;
-                putchar(c);  
+            status = IN;
+            putchar(c);
         }
     }
     return 0;
