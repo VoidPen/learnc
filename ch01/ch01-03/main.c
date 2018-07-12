@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-#define EOF (-1)
-
 int main(int argc, char const *argv[])
 {
     // int c;
@@ -23,7 +21,7 @@ int main(int argc, char const *argv[])
     int c, nl,nw,nt;
     nl =nw =nt =0;
     
-    while(( c=getchar()) !=EOF )
+    while((c=getchar()) != EOF)
     {
         
         if (c == '\t') {

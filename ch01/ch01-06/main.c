@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define EOF (-1)
+
 #define IN 1
 #define OUT 0
 
